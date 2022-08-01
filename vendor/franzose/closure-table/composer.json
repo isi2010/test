@@ -1,0 +1,42 @@
+{
+    "name": "franzose/closure-table",
+    "description": "Adjacency List’ed Closure Table database design pattern implementation for Laravel",
+    "keywords": ["laravel", "closure table", "database", "adjacency list", "pages", "categories", "hierarchy"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jan Iwanow",
+            "email": "iwanow.jan@gmail.com",
+            "homepage": "http://janiwanow.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "dev-master",
+        "way/phpunit-wrappers": "dev-master",
+        "way/laravel-test-helpers": "dev-master",
+        "mockery/mockery": "dev-master",
+        "orchestra/testbench": "dev-master",
+        "doctrine/dbal": "dev-master"
+    },
+    "autoload": {
+        "classmap": ["tests"],
+        "psr-0": {
+            "Franzose\\ClosureTable": "src/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Franzose\\ClosureTable\\ClosureTableServiceProvider"
+            ]
+        }
+    }
+}
