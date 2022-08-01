@@ -1,0 +1,54 @@
+{
+    "name": "spatie/enum",
+    "description": "PHP Enums",
+    "keywords": [
+        "spatie",
+        "enum",
+        "enumerable"
+    ],
+    "homepage": "https://github.com/spatie/enum",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Brent Roose",
+            "email": "brent@spatie.be",
+            "homepage": "https://spatie.be",
+            "role": "Developer"
+        },
+        {
+            "name": "Tom Witkowski",
+            "email": "dev@gummibeer.de",
+            "homepage": "https://gummibeer.de",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Spatie\\Enum\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Spatie\\Enum\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit --colors=always",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "support": {
+        "issues": "https://github.com/spatie/enum/issues",
+        "source": "https://github.com/spatie/enum",
+        "docs": "https://docs.spatie.be/enum"
+    }
+}

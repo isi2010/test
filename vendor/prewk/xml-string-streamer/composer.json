@@ -1,0 +1,28 @@
+{
+    "name": "prewk/xml-string-streamer",
+    "description": "Stream large XML files with low memory consumption",
+    "homepage": "https://github.com/prewk/xml-string-streamer",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "prewk",
+            "email": "oskar.thornblad@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Prewk\\": "src/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "require": {
+        "php": "^7.2 || ^8.0"
+    },
+    "require-dev": {
+        "prewk/xml-faker": "^0.0.2",
+        "mockery/mockery": "^1.3.0",
+        "phpunit/phpunit": "^8.5.8 || ^9.5.0"
+    }
+}
